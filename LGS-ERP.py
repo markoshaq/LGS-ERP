@@ -6,11 +6,10 @@ import ttkthemes as ttkt
 from tkinter import ttk
 
 root = ttkt.ThemedTk(theme="adapta")
-root.geometry("300x200")
 root.iconbitmap("lgslogo.ico")
 root.title("LGS ERP")
 
-button = ttk.Button(root, text="Click Me!")
-button.pack(pady=50)
+topbar_title = ttk.Label(root, text="LGS ERP", borderwidth="2")
+topbar_title.pack(pady=10, padx=10, anchor="nw")
 
 root.mainloop()
